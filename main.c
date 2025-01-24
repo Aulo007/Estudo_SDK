@@ -38,7 +38,7 @@ int main()
 
             case '2':
                 printf("Leds piscando de forma sequencial...\n");
-                Sequential_led();
+                sequential_led();
                 mostra_menu = true;
                 break;
 

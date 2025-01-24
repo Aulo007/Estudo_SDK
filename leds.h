@@ -17,6 +17,8 @@
 // Inicialização dos LEDs
 void led_init(void);
 
+void sequential_led(void);
+
 // Adicione mais funções aqui
 
 #endif // LED_CONTROL_H

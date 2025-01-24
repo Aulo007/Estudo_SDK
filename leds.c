@@ -14,7 +14,7 @@ void led_init(void)
     }
 }
 
-void Sequential_led(void)
+void sequential_led(void)
 {
     for (int i = 0; i < 9; i++)
     {
