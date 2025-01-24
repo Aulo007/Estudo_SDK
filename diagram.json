@@ -1,0 +1,432 @@
+{
+    "version": 1,
+    "author": "Aulo",
+    "editor": "wokwi",
+    "parts": [
+        {
+            "type": "board-pi-pico-w",
+            "id": "pico",
+            "top": -133.25,
+            "left": -58.95,
+            "rotate": 90,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-membrane-keypad",
+            "id": "keypad1",
+            "top": -539.6,
+            "left": -186.4,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-buzzer",
+            "id": "bz1",
+            "top": -144,
+            "left": -240,
+            "rotate": 180,
+            "attrs": {
+                "volume": "0.1"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "r5",
+            "top": 177.6,
+            "left": -144.55,
+            "rotate": 90,
+            "attrs": {
+                "value": "220"
+            }
+        },
+        {
+            "type": "wokwi-rgb-led",
+            "id": "rgb1",
+            "top": 109.6,
+            "left": -46.9,
+            "attrs": {
+                "common": "cathode"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "r6",
+            "top": 177.6,
+            "left": -134.95,
+            "rotate": 90,
+            "attrs": {
+                "value": "220"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "r7",
+            "top": 177.6,
+            "left": -115.75,
+            "rotate": 90,
+            "attrs": {
+                "value": "220"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "r8",
+            "top": 43.2,
+            "left": -106.15,
+            "rotate": 90,
+            "attrs": {
+                "value": "220"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "r9",
+            "top": 43.2,
+            "left": -67.75,
+            "rotate": 90,
+            "attrs": {
+                "value": "220"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "r10",
+            "top": 43.2,
+            "left": -96.55,
+            "rotate": 90,
+            "attrs": {
+                "value": "220"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "r11",
+            "top": 43.2,
+            "left": -86.95,
+            "rotate": 90,
+            "attrs": {
+                "value": "220"
+            }
+        },
+        {
+            "type": "wokwi-rgb-led",
+            "id": "rgb2",
+            "top": 109.6,
+            "left": 10.7,
+            "attrs": {
+                "common": "cathode"
+            }
+        },
+        {
+            "type": "wokwi-rgb-led",
+            "id": "rgb3",
+            "top": 109.6,
+            "left": 68.3,
+            "attrs": {
+                "common": "cathode"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "r12",
+            "top": 43.2,
+            "left": -58.15,
+            "rotate": 90,
+            "attrs": {
+                "value": "220"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "r13",
+            "top": 43.2,
+            "left": -48.55,
+            "rotate": 90,
+            "attrs": {
+                "value": "220"
+            }
+        }
+    ],
+    "connections": [
+        [
+            "keypad1:R1",
+            "pico:GP13",
+            "#8f4814",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "keypad1:R2",
+            "pico:GP12",
+            "orange",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "keypad1:R3",
+            "pico:GP11",
+            "gold",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "keypad1:R4",
+            "pico:GP10",
+            "green",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "pico:GND.3",
+            "bz1:1",
+            "black",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "pico:GP14",
+            "bz1:2",
+            "red",
+            [
+                "v-86.4",
+                "h-96.04"
+            ]
+        ],
+        [
+            "pico:GP16",
+            "r5:1",
+            "red",
+            [
+                "h0"
+            ]
+        ],
+        [
+            "r5:2",
+            "rgb1:R",
+            "red",
+            [
+                "h0"
+            ]
+        ],
+        [
+            "pico:GP17",
+            "r6:1",
+            "green",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "r6:2",
+            "rgb1:G",
+            "green",
+            [
+                "h0",
+                "v8.4",
+                "h86.4"
+            ]
+        ],
+        [
+            "pico:GND.5",
+            "rgb1:COM",
+            "black",
+            [
+                "v163.51",
+                "h9.56"
+            ]
+        ],
+        [
+            "pico:GP18",
+            "r7:1",
+            "blue",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "r7:2",
+            "rgb1:B",
+            "blue",
+            [
+                "h0",
+                "v18",
+                "h76.8"
+            ]
+        ],
+        [
+            "pico:GP19",
+            "r8:1",
+            "red",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "pico:GP20",
+            "r10:1",
+            "green",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "pico:GP21",
+            "r11:1",
+            "blue",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "r8:2",
+            "rgb2:R",
+            "red",
+            [
+                "h0",
+                "v104.4",
+                "h96"
+            ]
+        ],
+        [
+            "r10:2",
+            "rgb2:G",
+            "green",
+            [
+                "h0",
+                "v114",
+                "h105.6"
+            ]
+        ],
+        [
+            "r11:2",
+            "rgb2:B",
+            "blue",
+            [
+                "h0",
+                "v123.6",
+                "h105.6"
+            ]
+        ],
+        [
+            "pico:GND.6",
+            "rgb2:COM",
+            "black",
+            [
+                "v173.11",
+                "h76.8"
+            ]
+        ],
+        [
+            "pico:GP22",
+            "r9:1",
+            "red",
+            [
+                "v0"
+            ]
+        ],
+        [
+            "pico:GP26",
+            "r12:1",
+            "green",
+            [
+                "v9.91",
+                "h-9.6"
+            ]
+        ],
+        [
+            "pico:GP27",
+            "r13:1",
+            "blue",
+            [
+                "v9.91",
+                "h-9.6"
+            ]
+        ],
+        [
+            "pico:GND.7",
+            "rgb3:COM",
+            "black",
+            [
+                "v221.11",
+                "h86.4"
+            ]
+        ],
+        [
+            "r9:2",
+            "rgb3:R",
+            "red",
+            [
+                "h0",
+                "v18",
+                "h96",
+                "v96",
+                "h19.2"
+            ]
+        ],
+        [
+            "r12:2",
+            "rgb3:G",
+            "green",
+            [
+                "h0",
+                "v8.4",
+                "h96",
+                "v115.2",
+                "h28.8"
+            ]
+        ],
+        [
+            "r13:2",
+            "rgb3:B",
+            "blue",
+            [
+                "h9.6",
+                "v46.8",
+                "h19.2",
+                "v86.4",
+                "h96"
+            ]
+        ],
+        [
+            "keypad1:C1",
+            "pico:GP9",
+            "blue",
+            [
+                "v48",
+                "h9.5"
+            ]
+        ],
+        [
+            "keypad1:C2",
+            "pico:GP8",
+            "violet",
+            [
+                "v38.4",
+                "h9.6"
+            ]
+        ],
+        [
+            "keypad1:C3",
+            "pico:GP7",
+            "gray",
+            [
+                "v28.8",
+                "h9.45"
+            ]
+        ],
+        [
+            "keypad1:C4",
+            "pico:GP6",
+            "white",
+            [
+                "v19.2",
+                "h9.3"
+            ]
+        ]
+    ],
+    "dependencies": {}
+}
